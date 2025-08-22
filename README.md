@@ -33,7 +33,8 @@ if __name__ == "__main__":
     mcts_agent = MCTSAgent(max_time=0.5)
     random_agent = RandomAgent()
     winner = game.play_game(mcts_agent, random_agent, display=True)
-    print("Winner:", winner) ```
+    print("Winner:", winner)
+```
 
 ---
 ## Comparaison d’agents
@@ -52,7 +53,8 @@ agents = {
     "Random": RandomAgent(),
 }
 
-compare_agents(agents, num_games=10, board_sizes=[3, 5, 7, 11], display=False)```
+compare_agents(agents, num_games=10, board_sizes=[3, 5, 7, 11], display=False)
+```
 
 ---
 ## Variantes testées
