@@ -59,10 +59,10 @@ compare_agents(agents, num_games=10, board_sizes=[3, 5, 7, 11], display=False)
 ---
 ## Variantes testées
 
-*MCTS standard : baseline.
-*RAVE : propagation AMAF, efficace sur petits plateaux.
-*Heuristic playouts : simulations biaisées par la distance au centre.
-*Progressive Bias : sélection influencée par une heuristique, qui s’estompe avec les visites.
+* MCTS standard : baseline.
+* RAVE : propagation AMAF, efficace sur petits plateaux.
+* Heuristic playouts : simulations biaisées par la distance au centre.
+* Progressive Bias : sélection influencée par une heuristique, qui s’estompe avec les visites.
 
 ---
 ## Résultats principaux
