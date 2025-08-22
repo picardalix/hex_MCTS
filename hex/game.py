@@ -1,7 +1,7 @@
 from hex.player import Player
 import random
 import time
-from hex.board import HexBoard
+from hex.hex_board import HexBoard
 
 class HexGame:
     """Classe principale pour gérer une partie de Hex"""
