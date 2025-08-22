@@ -1,5 +1,5 @@
 
-from hex.game import HexBoard
+from hex.hex_board import HexBoard
 from hex.player import Player
 import math, random, time
 from typing import Tuple, Optional, List, Dict
@@ -63,7 +63,7 @@ class MCTSRAVENode:
         if child.visits == 0:
             return float("inf")
         
-        if child.visits > 50:   # seuil à ajuster
+        if child.visits > 50:  
             beta = 0  # on désactive RAVE, on ne garde que MCTS
 
         return combined_value + exploration_constant * math.sqrt(math.log(self.visits) / child.visits)
