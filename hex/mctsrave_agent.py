@@ -1,14 +1,11 @@
-from hex.game import HexBoard
+from hex.hex_board import HexBoard
 from hex.player import Player
 import math, random, time
 from typing import Tuple, Optional, List, Dict
 from hex.mctsrave_node import MCTSRAVENode
 
-# ===============================
-# 1. MCTS avec RAVE (AMAF)
-# ===============================
 class MCTSRAVEAgent:
-    def __init__(self, exploration_constant: float = math.sqrt(2), max_time: float = 1.0, rave_const: float = 300):
+    def __init__(self, exploration_constant: float = math.sqrt(2), max_time: float = 1.0, rave_const: float = 30): 
         self.exploration_constant = exploration_constant
         self.max_time = max_time
         self.rave_const = rave_const  # poids qui équilibre MCTS et RAVE
