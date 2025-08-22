@@ -1,4 +1,4 @@
-from hex.game import HexBoard
+from hex.hex_board import HexBoard
 from hex.player import Player
 import math
 from typing import List, Tuple, Optional, Dict
