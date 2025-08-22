@@ -67,13 +67,13 @@ compare_agents(agents, num_games=10, board_sizes=[3, 5, 7, 11], display=False)
 ---
 ## Résultats principaux
 
-MCTS bat systématiquement les agents Random et Greedy.
-Les variantes heuristiques (Heuristic, Progressive Bias) offrent un gain, surtout avec peu de temps de calcul.
-RAVE fonctionne bien sur de petits plateaux ($3\times 3$) mais perd en efficacité sur les plus grands.
+* MCTS bat systématiquement les agents Random et Greedy.
+* Les variantes heuristiques (Heuristic, Progressive Bias) offrent un gain, surtout avec peu de temps de calcul.
+* RAVE fonctionne bien sur de petits plateaux ($3\times 3$) mais perd en efficacité sur les plus grands.
 
 ---
 ## Améliorations possibles
 
-Playouts heuristiques plus poussés (détection de ponts, chaînes, etc.).
-MCTS parallèle pour augmenter le nombre de simulations.
-Allocation adaptative du temps de réflexion selon la phase de jeu.
+* Playouts heuristiques plus poussés (détection de ponts, chaînes, etc.).
+* MCTS parallèle pour augmenter le nombre de simulations.
+* Allocation adaptative du temps de réflexion selon la phase de jeu.
