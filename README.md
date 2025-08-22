@@ -20,3 +20,17 @@ Il permet de simuler des parties, comparer différents agents (MCTS, RAVE, heuri
 - Paramétrage du temps de réflexion par coup (`max_time`).
 
 ---
+##Exemple d’utilisation
+
+Exécuter une partie de démonstration entre MCTS et Random sur un plateau $5\times5$ :
+
+from hex.mcts_agent import MCTSAgent
+from hex.random_agent import RandomAgent
+from hex.game import HexGame
+
+if __name__ == "__main__":
+    game = HexGame(5)
+    mcts_agent = MCTSAgent(max_time=0.5)
+    random_agent = RandomAgent()
+    winner = game.play_game(mcts_agent, random_agent, display=True)
+    print("Winner:", winner)
