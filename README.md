@@ -20,7 +20,7 @@ Il permet de simuler des parties, comparer différents agents (MCTS, RAVE, heuri
 - Paramétrage du temps de réflexion par coup (`max_time`).
 
 ---
-##Exemple d’utilisation
+## Exemple d’utilisation
 
 Exécuter une partie de démonstration entre MCTS et Random sur un plateau $5\times5$ :
 ```python
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     print("Winner:", winner) ```
 
 ---
-##Comparaison d’agents
+## Comparaison d’agents
 
 Vous pouvez lancer un tournoi round-robin entre plusieurs agents :
 ```python
@@ -55,7 +55,7 @@ agents = {
 compare_agents(agents, num_games=10, board_sizes=[3, 5, 7, 11], display=False)```
 
 ---
-##Variantes testées
+## Variantes testées
 
 MCTS standard : baseline.
 RAVE : propagation AMAF, efficace sur petits plateaux.
@@ -63,14 +63,14 @@ Heuristic playouts : simulations biaisées par la distance au centre.
 Progressive Bias : sélection influencée par une heuristique, qui s’estompe avec les visites.
 
 ---
-##Résultats principaux
+## Résultats principaux
 
 MCTS bat systématiquement les agents Random et Greedy.
 Les variantes heuristiques (Heuristic, Progressive Bias) offrent un gain, surtout avec peu de temps de calcul.
 RAVE fonctionne bien sur de petits plateaux ($3\times 3$) mais perd en efficacité sur les plus grands.
 
 ---
-##Améliorations possibles
+## Améliorations possibles
 
 Playouts heuristiques plus poussés (détection de ponts, chaînes, etc.).
 MCTS parallèle pour augmenter le nombre de simulations.
