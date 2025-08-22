@@ -3,9 +3,6 @@ import math, random, time
 from typing import Tuple, Optional, List, Dict
 from hex.mcts_agent import MCTSAgent
 
-# ===============================
-# 2. MCTS avec playouts heuristiques
-# ===============================
 class MCTSHeuristicAgent(MCTSAgent):
     def _simulate(self, node) -> float:
         board_copy = node.board.copy()
@@ -33,3 +30,4 @@ class MCTSHeuristicAgent(MCTSAgent):
             return 0.5
         else:
             return 0.0
+
